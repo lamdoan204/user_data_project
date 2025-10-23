@@ -1,4 +1,4 @@
-# 🧠 User Data Project
+#  User Data Project
 
 This project implements a **real-time user data processing pipeline** using modern data engineering tools.  
 The system ingests, processes, and stores user information in a scalable, reliable, and containerized environment.
@@ -9,7 +9,7 @@ The system ingests, processes, and stores user information in a scalable, reliab
 
 The overall architecture follows a **data streaming pipeline** model.
 
-![Architecture Diagram](./architecture.png)
+![Architecture Diagram](./architecture.jpg)
 
 ### 🔹 Workflow Overview
 1. **Data Ingestion**
@@ -31,6 +31,16 @@ The overall architecture follows a **data streaming pipeline** model.
 5. **Orchestration & Monitoring**
    - Airflow handles workflow scheduling and dependency management.
    - Logs and metrics are available through the Dockerized environment.
+---
+---
+
+## 🧱 Key Features
+
+- Setting up a data pipeline with **Apache Airflow**
+- Real-time data streaming with **Apache Kafka** (or **Redpanda**)
+- Data processing techniques with **Apache Spark**
+- Data storage solutions with **PostgreSQL**
+- Containerizing your entire data engineering setup with **Docker**
 
 ---
 
@@ -46,24 +56,4 @@ The overall architecture follows a **data streaming pipeline** model.
 | **PostgreSQL** | Stores processed and cleaned data for downstream use |
 
 ---
-
-## ⚙️ Project Structure
-user_data_project/
-│
-├── airflow/ # DAGs and Airflow configuration
-│ ├── dags/
-│ └── Dockerfile
-│
-├── api_request/ # Scripts to fetch and publish user data
-│ ├── init.py
-│ └── fetch_data.py
-│
-├── spark/ # Spark processing scripts
-│ ├── jobs/
-│ └── Dockerfile
-│
-├── docker-compose.yml # Defines multi-container environment
-├── requirements.txt # Python dependencies
-├── architecture.png # System architecture diagram
-└── README.md # Documentation
 
