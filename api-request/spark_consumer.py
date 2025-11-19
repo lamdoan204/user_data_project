@@ -18,7 +18,7 @@ schema = StructType(
     StructField("registered_date", TimestampType(), True)
     ]
 )
-time
+
 # Đọc stream từ Kafka
 df = (
     spark.readStream
