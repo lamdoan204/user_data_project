@@ -56,4 +56,10 @@ The overall architecture follows a **data streaming pipeline** model.
 | **PostgreSQL** | Stores processed and cleaned data for downstream use |
 
 ---
-
+## How to run Project
+- Run commnad ''docker compose up -d'' in terminal to run containers
+  ![images1](./images/docker-compose-up.jpg)
+- In the airflow console, get password to login to airflow dashboad
+  ![images2](./images/airflow-password.jpg)
+  ![images3](./images/airflow-dashboard.jpg)
+---
